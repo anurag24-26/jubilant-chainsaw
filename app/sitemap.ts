@@ -1,5 +1,5 @@
 import type { MetadataRoute } from "next";
-const SITE = process.env.NEXT_PUBLIC_SITE_URL ?? "https://example.com";
+const SITE = process.env.NEXT_PUBLIC_SITE_URL ?? "http://barhalganj.vercel.app/";
 export default function sitemap(): MetadataRoute.Sitemap {
   return [{ url: SITE, lastModified: new Date(), changeFrequency: "weekly", priority: 1 }];
 }

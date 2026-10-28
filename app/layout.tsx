@@ -24,7 +24,7 @@ export const metadata: Metadata = {
   robots: { index: true, follow: true },
   openGraph: { type: "website", locale: "hi_IN", url: "/", siteName: "बड़हलगंज", title, description },
   twitter: { card: "summary", title, description },
-  verification: process.env.NEXT_PUBLIC_GSC_TOKEN ? { google: process.env.NEXT_PUBLIC_GSC_TOKEN } : undefined,
+  verification: process.env.NEXT_GSC_TOKEN ? { google: process.env.NEXT_GSC_TOKEN } : undefined,
 };
 
 export const viewport: Viewport = { width: "device-width", initialScale: 1, themeColor: "#ffffff" };
